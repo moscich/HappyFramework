@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7936251D1FEC46DD0062FE37 /* HappyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7936251B1FEC46DD0062FE37 /* HappyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		793625241FEC47390062FE37 /* Happy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793625231FEC47390062FE37 /* Happy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		793625181FEC46DD0062FE37 /* HappyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HappyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7936251B1FEC46DD0062FE37 /* HappyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HappyFramework.h; sourceTree = "<group>"; };
 		7936251C1FEC46DD0062FE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		793625231FEC47390062FE37 /* Happy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				7936251B1FEC46DD0062FE37 /* HappyFramework.h */,
 				7936251C1FEC46DD0062FE37 /* Info.plist */,
+				793625231FEC47390062FE37 /* Happy.swift */,
 			);
 			path = HappyFramework;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					793625171FEC46DD0062FE37 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793625241FEC47390062FE37 /* Happy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		793625211FEC46DD0062FE37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +272,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moscichowski.HappyFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +281,7 @@
 		793625221FEC46DD0062FE37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
